@@ -60,6 +60,9 @@ dependencies {
     implementation(Dependencies.ThirdParty.HILT_ANDROID)
     implementation(Dependencies.ThirdParty.HILT_ANDROID_COMPILER)
 
+    // Timber
+    implementation(Dependencies.ThirdParty.TIMBER)
+
     // Glide
     implementation(Dependencies.ThirdParty.GLIDE)
     implementation(Dependencies.ThirdParty.GLIDE_COMPILER)

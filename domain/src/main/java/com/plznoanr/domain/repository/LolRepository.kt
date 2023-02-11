@@ -1,4 +1,4 @@
 package com.plznoanr.domain.repository
 
-class MyClass {
+interface LolRepository {
 }

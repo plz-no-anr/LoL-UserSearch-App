@@ -83,6 +83,9 @@ object Dependencies {
         const val GLIDE = "com.github.bumptech.glide:glide:${Version.GLIDE}"
         const val GLIDE_COMPILER = "com.github.bumptech.glide:compiler:${Version.GLIDE}"
 
+        // Timber
+        const val TIMBER = "com.jakewharton.timber:timber:5.0.1"
+
     }
 
     object Test {

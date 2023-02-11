@@ -91,6 +91,9 @@ dependencies {
     implementation(Dependencies.ThirdParty.GLIDE)
     implementation(Dependencies.ThirdParty.GLIDE_COMPILER)
 
+    // Timber
+    implementation(Dependencies.ThirdParty.TIMBER)
+
     // Test
     testImplementation(Dependencies.Test.JUNIT)
     testImplementation(Dependencies.Test.ROBOELETRIC)
