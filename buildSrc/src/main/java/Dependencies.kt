@@ -47,6 +47,9 @@ object Dependencies {
         const val SWIFE_REFRESH_LAYOUT = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
         const val NAVIGATION_FRAGMENT_KTX = "androidx.navigation:navigation-fragment-ktx:${Version.NAVIGATION}"
         const val NAVIGATION_UI_KTX = "androidx.navigation:navigation-ui-ktx:${Version.NAVIGATION}"
+
+        // Splash
+        const val SPLASH_SCREEN = "androidx.core:core-splashscreen:1.0.0"
     }
 
     object ThirdParty {

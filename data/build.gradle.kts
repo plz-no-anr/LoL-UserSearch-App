@@ -55,17 +55,18 @@ dependencies {
     // Room
     implementation(Dependencies.ThirdParty.ROOM)
     implementation(Dependencies.ThirdParty.ROOM_RUNTIME)
-    implementation(Dependencies.ThirdParty.ROOM_COMPILER)
+    kapt(Dependencies.ThirdParty.ROOM_COMPILER)
+
     // Hilt
     implementation(Dependencies.ThirdParty.HILT_ANDROID)
-    implementation(Dependencies.ThirdParty.HILT_ANDROID_COMPILER)
+    kapt(Dependencies.ThirdParty.HILT_ANDROID_COMPILER)
 
     // Timber
     implementation(Dependencies.ThirdParty.TIMBER)
 
     // Glide
     implementation(Dependencies.ThirdParty.GLIDE)
-    implementation(Dependencies.ThirdParty.GLIDE_COMPILER)
+    kapt(Dependencies.ThirdParty.GLIDE_COMPILER)
 
     // Test
     testImplementation(Dependencies.Test.JUNIT)

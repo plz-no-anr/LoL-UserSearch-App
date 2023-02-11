@@ -58,6 +58,9 @@ dependencies {
     implementation(Dependencies.AndroidX.CORE_KTX)
     implementation(Dependencies.AndroidX.APP_COMPAT)
 
+    // Splash
+    implementation(Dependencies.AndroidX.SPLASH_SCREEN)
+
     // UI
     implementation(Dependencies.ThirdParty.ANDROID_MATERIAL)
     implementation(Dependencies.AndroidX.SWIFE_REFRESH_LAYOUT)
@@ -70,26 +73,26 @@ dependencies {
     implementation(Dependencies.AndroidX.LIFECYCLE_RUNTIME_KTX)
     implementation(Dependencies.AndroidX.LIFECYCLE_EXTENSIONS)
 
-
     // Coroutines
     implementation(Dependencies.ThirdParty.KOTLINX_COROUTINES_CORE)
     implementation(Dependencies.ThirdParty.KOTLINX_COROUTENS_ANDROID)
+
     // Retrofit
     implementation(Dependencies.ThirdParty.RETROFIT)
     implementation(Dependencies.ThirdParty.RETROFIT_CONVERTER_GSON)
 
-
     // Room
     implementation(Dependencies.ThirdParty.ROOM)
     implementation(Dependencies.ThirdParty.ROOM_RUNTIME)
-    implementation(Dependencies.ThirdParty.ROOM_COMPILER)
+    kapt(Dependencies.ThirdParty.ROOM_COMPILER)
+
     // Hilt
     implementation(Dependencies.ThirdParty.HILT_ANDROID)
-    implementation(Dependencies.ThirdParty.HILT_ANDROID_COMPILER)
+    kapt(Dependencies.ThirdParty.HILT_ANDROID_COMPILER)
 
     // Glide
     implementation(Dependencies.ThirdParty.GLIDE)
-    implementation(Dependencies.ThirdParty.GLIDE_COMPILER)
+    kapt(Dependencies.ThirdParty.GLIDE_COMPILER)
 
     // Timber
     implementation(Dependencies.ThirdParty.TIMBER)

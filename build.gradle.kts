@@ -8,6 +8,7 @@ buildscript {
         classpath(Dependencies.ClassPath.GRADLE)
         classpath(Dependencies.ClassPath.KOTLIN_PLUGIN)
         classpath(Dependencies.ClassPath.HILT_PLUGIN)
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0")
     }
 }
 
