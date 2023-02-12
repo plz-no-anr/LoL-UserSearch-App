@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="txt_search_desc">검색할 닉네임을 입력해주세요</string>
+    <string name="txt_recent_search">최근 검색</string>
+    <string name="txt_banned">선택금지:</string>
+    <string name="txt_map">맵</string>
+</resources>
