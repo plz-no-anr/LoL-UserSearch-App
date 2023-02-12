@@ -16,7 +16,7 @@ object Dependencies {
         object Version {
             const val GRADLE_VERSION = "7.4.1"
             const val KOTLIN_VERSION = "1.8.0"
-            const val HILT_VERSION = "2.44"
+            const val HILT_VERSION = "2.45"
         }
 
         const val GRADLE = "com.android.tools.build:gradle:${Version.GRADLE_VERSION}"
@@ -59,7 +59,7 @@ object Dependencies {
             const val COROUTINES = "1.6.0"
             const val RETROFIT = "2.9.0"
             const val ROOM = "2.5.0"
-            const val HILT = "2.42"
+            const val HILT = "2.45"
             const val GLIDE = "4.14.2"
         }
 
