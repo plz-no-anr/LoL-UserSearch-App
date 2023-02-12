@@ -2,7 +2,7 @@ plugins {
     id(Dependencies.Plugins.LIBRARY)
     id(Dependencies.Plugins.KOTLIN_ANDROID)
     id(Dependencies.Plugins.KOTLIN_PARCELIZE)
-    id(Dependencies.Plugins.KOTLIN_KAPT)
+    kotlin(Dependencies.Plugins.KOTLIN_KAPT)
     id(Dependencies.Plugins.DAGGER_HILT)
 }
 
@@ -33,6 +33,10 @@ android {
     kotlinOptions {
         jvmTarget = AppConfig.JAVA_JVM_TARGET
     }
+}
+
+kapt {
+    correctErrorTypes = true
 }
 
 dependencies {

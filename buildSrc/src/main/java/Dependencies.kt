@@ -5,8 +5,8 @@ object Dependencies {
         const val LIBRARY = "com.android.library"
         const val KOTLIN_ANDROID = "org.jetbrains.kotlin.android"
         const val KOTLIN_PARCELIZE = "kotlin-parcelize"
-        const val KOTLIN_KAPT = "kotlin-kapt"
-        const val DAGGER_HILT = "dagger.hilt.android.plugin"
+        const val KOTLIN_KAPT = "kapt"
+        const val DAGGER_HILT = "com.google.dagger.hilt.android"
 
         const val JAVA_LIBRARY = "java-library"
         const val KOTLIN_JVM = "org.jetbrains.kotlin.jvm"
@@ -16,7 +16,7 @@ object Dependencies {
         object Version {
             const val GRADLE_VERSION = "7.4.1"
             const val KOTLIN_VERSION = "1.8.0"
-            const val HILT_VERSION = "2.42"
+            const val HILT_VERSION = "2.44"
         }
 
         const val GRADLE = "com.android.tools.build:gradle:${Version.GRADLE_VERSION}"

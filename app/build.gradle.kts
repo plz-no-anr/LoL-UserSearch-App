@@ -2,7 +2,7 @@ plugins {
     id(Dependencies.Plugins.APPLICATION)
     id(Dependencies.Plugins.KOTLIN_ANDROID)
     id(Dependencies.Plugins.KOTLIN_PARCELIZE)
-    id(Dependencies.Plugins.KOTLIN_KAPT)
+    kotlin(Dependencies.Plugins.KOTLIN_KAPT)
     id(Dependencies.Plugins.DAGGER_HILT)
 }
 
@@ -49,6 +49,10 @@ android {
             isReturnDefaultValues = true
         }
     }
+}
+
+kapt {
+    correctErrorTypes = true
 }
 
 dependencies {
