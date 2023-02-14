@@ -9,6 +9,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import kotlinx.coroutines.CoroutineDispatcher
 import javax.inject.Singleton
 
 @Module
@@ -17,10 +18,14 @@ object RepositoryModule {
     @Provides
     @Singleton
     fun provideAppRepository(
+        @CoroutineQualifiers.IoDispatcher coroutineDispatcher: CoroutineDispatcher,
         localDataSource: LocalDataSource,
         remoteDataSource: RemoteDataSource,
         preferenceDataSource: PreferenceDataSource
     ) : AppRepository = AppRepositoryImpl(
-        localDataSource, remoteDataSource, preferenceDataSource
+        coroutineDispatcher,
+        localDataSource,
+        remoteDataSource,
+        preferenceDataSource
     )
 }
