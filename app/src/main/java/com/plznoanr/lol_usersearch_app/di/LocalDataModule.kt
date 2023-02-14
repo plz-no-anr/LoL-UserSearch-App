@@ -2,6 +2,7 @@ package com.plznoanr.lol_usersearch_app.di
 
 import android.content.Context
 import androidx.room.Room
+import com.google.gson.Gson
 import com.plznoanr.data.db.AppDao
 import com.plznoanr.data.db.AppDatabase
 import com.plznoanr.data.repository.local.LocalDataSource
@@ -25,7 +26,6 @@ object LocalDataModule {
             context,
             AppDatabase::class.java,
             "lol-app.db")
-            .addTypeConverter(RoomTypeConverter())
             .build()
 
     @Provides

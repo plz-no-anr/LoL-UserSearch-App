@@ -29,6 +29,9 @@ android {
     }
 
     buildTypes {
+        debug {
+            
+        }
         release {
             isMinifyEnabled = false
             proguardFiles(
@@ -97,6 +100,11 @@ dependencies {
     // Glide
     implementation(Dependencies.ThirdParty.GLIDE)
     kapt(Dependencies.ThirdParty.GLIDE_COMPILER)
+
+    // Epoxy
+    implementation(Dependencies.ThirdParty.EPOXY)
+    implementation(Dependencies.ThirdParty.EPOXY_DATABINDING)
+    kapt(Dependencies.ThirdParty.EPOXY_PROCESSOR)
 
     // Timber
     implementation(Dependencies.ThirdParty.TIMBER)

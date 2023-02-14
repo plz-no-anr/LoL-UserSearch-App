@@ -61,6 +61,7 @@ object Dependencies {
             const val ROOM = "2.5.0"
             const val HILT = "2.45"
             const val GLIDE = "4.14.2"
+            const val EPOXY = "5.1.1"
         }
 
         // Coroutines
@@ -85,6 +86,11 @@ object Dependencies {
         // Glide
         const val GLIDE = "com.github.bumptech.glide:glide:${Version.GLIDE}"
         const val GLIDE_COMPILER = "com.github.bumptech.glide:compiler:${Version.GLIDE}"
+
+        // Epoxy
+        const val EPOXY = "com.airbnb.android:epoxy:${Version.EPOXY}"
+        const val EPOXY_PROCESSOR = "com.airbnb.android:epoxy-processor:${Version.EPOXY}"
+        const val EPOXY_DATABINDING = "com.airbnb.android:epoxy-databinding:${Version.EPOXY}"
 
         // Timber
         const val TIMBER = "com.jakewharton.timber:timber:5.0.1"
