@@ -43,7 +43,15 @@ class MainFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        initViews()
+    }
 
+    override fun initViews() {
+        with(binding) {
+            clSearch.setOnClickListener {
+                navigateTo(R.id.action_global_searchFragment)
+            }
+        }
     }
 
 
