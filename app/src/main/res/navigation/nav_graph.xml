@@ -9,18 +9,33 @@
         android:id="@+id/mainFragment"
         android:name="com.plznoanr.lol_usersearch_app.ui.main.MainFragment"
         tools:layout="@layout/fragment_main"
-        android:label="MainFragment" >
-        <action
-            android:id="@+id/action_mainFragment_to_searchFragment"
-            app:destination="@id/searchFragment" />
+        android:label="@string/txt_total_search" >
     </fragment>
 
     <fragment
         android:id="@+id/searchFragment"
         android:name="com.plznoanr.lol_usersearch_app.ui.search.SearchFragment"
-        android:label="SearchFragment"
-        tools:layout="@layout/fragment_search" />
+        android:label="@string/txt_search"
+        tools:layout="@layout/fragment_search" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/spectatorFragment"
+        android:name="com.plznoanr.lol_usersearch_app.ui.spectator.SpectatorFragment"
+        android:label="@string/txt_spectator"
+        tools:layout="@layout/fragment_spectator" />
+    <fragment
+        android:id="@+id/summonerFragment"
+        android:name="com.plznoanr.lol_usersearch_app.ui.summoner.SummonerFragment"
+        android:label="@string/txt_summoner_info"
+        tools:layout="@layout/fragment_summoner" />
+
     <action android:id="@+id/action_global_searchFragment"
         app:destination="@id/searchFragment"/>
+    <action android:id="@+id/action_global_summonerFragment"
+        app:destination="@id/summonerFragment"/>
+    <action android:id="@+id/action_global_spectatorFragment"
+        app:destination="@id/spectatorFragment"/>
 
 </navigation>
