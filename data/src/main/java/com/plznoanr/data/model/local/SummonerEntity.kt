@@ -1,8 +1,10 @@
 package com.plznoanr.data.model.local
 
+import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.plznoanr.domain.model.Summoner
+import kotlinx.parcelize.Parcelize
 
 @Entity
 data class SummonerEntity(
